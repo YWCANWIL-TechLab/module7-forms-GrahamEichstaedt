@@ -13,7 +13,7 @@
         <header id="header" class="container">
             <h1>Exercise 2: Form Attributes</h1>
             <p>
-                Form attributes can enhance our abilities of our forms. Form attributes let you begin
+                Form attributes can enhance the abilities of our forms. Form attributes let you begin
                 to validate your user input without having to use JavaScript.
             </p>
             <a href="../index.html">Home</a>
@@ -84,7 +84,90 @@
             </p>
         </section>
         <section id="answers" class="container">
+            <form id="form1">
+                <p>What is your first and last name?</p>
+                <label for="first">First Name:</label><br>
+                <input type="text" id="first" name="first" value="John"><br>
+                <label for="last">Last Name:</label><br>
+                <input type="text" id="last" name="last" value="Doe"><br>
+            </form>
+            <hr>
+            <form id="form2">
+                <p>What is your full name?</p>
+                <label for="first-name">First Name:</label><br>
+                <input type="text" id="first-name" name="first-name"><br>
+                <label for="middle-name">Middle Name:</label><br>
+                <input type="text" id="middle-name" name="middle-name" disabled><br>
+                <label for="last-name">Last Name:</label><br>
+                <input type="text" id="last-name" name="last-name"><br>
+            </form>
+            <hr>
+            <form id="form3">
+                <p>Enter your username and password.</p>
+                <label for="user">Username:</label><br>
+                <input type="text" id="user" name="user"><br>
+                <label for="pswd">Password:</label><br>
+                <input type="password" id="pswd" name="pswd"><br>
+            </form>
+            <hr>
+            <form id="form4">
+                <p>Please leave a review!</p>
+                <textarea title="review" cols="50"></textarea><br>
+                <input type="reset" value="Reset">
+            </form>
+            <hr>
+            <form id="form5">
+                <p>Leave another review!</p>
+                <textarea title="review #2" cols="50" maxlength="100"></textarea><br>
+            </form>
+            <hr>
+            <form id="form6">
+                <label for="date-range">
+                    Please select a date from the US Covid-19 Public Health Emergency (Jan 31, 2020 - May 11, 2022).
+                </label>
+                <br>
+                <input type="date" id="date-range" name="date-range" min="2020-1-31" max="2022-11-2022"><br>
+            </form>
+            <hr>
+            <form id="form7">
+                <label for="files">Please upload all the files of this website:</label><br>
+                <input type="file" id="files" name="files" multiple>
+            </form>
+            <hr>
+            <form id="form8">
+                <label for="search">Search Bar:</label>
+                <input type="search" id="search" name="search" placeholder="What's on your mind?"><br>
 
+                <input type="submit" value="Search!">
+            </form>
+            <hr>
+            <form id="form9">
+                <label for="favnum">What is your favorite number?</label><br>
+                <input type="number" id="favnum" name="favnum" autofocus>
+            </form>
+            <hr>
+            <form id="form10">
+                <label for="numrange">Select a number between 0 and 100:</label><br>
+                <input type="range" id="numrange" name="numrange" min="0" max="100" step="2">
+            </form>
+            <hr>
+            <form id="form11">
+                <label for="f-name">First Name:</label><br>
+                <input type="text" id="f-name" name="f-name" placeholder="What's your first name?"><br><br>
+                <label for="l-name">Last Name:</label><br>
+                <input type="text" id="l-name" name="l-name" placeholder="What's your last name?"><br><br>
+                <input type="image" src="../logo_ywca_32by32.png" alt="YWCA Submit Button">
+            </form>
+            <hr>
+            <form id="form12">
+                <label for="favfruit">Enter your favorite fruit:</label><br>
+                <input type="list" id="favfruit" name="fruits" list="fruits">
+                <datalist id="fruits">
+                    <option value="apple">Apricot</option>
+                    <option value="currant">Currant</option>
+                    <option value="dragonfruit">Dragonfruit</option>
+                </datalist>
+            </form>
         </section>
         <script src="" async defer></script>
     </body>
